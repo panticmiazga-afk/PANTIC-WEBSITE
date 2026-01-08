@@ -1,0 +1,82 @@
+
+/* simple animation */
+
+/* .box {
+  width: 400px;
+  height: 400px;
+  padding: 10px;
+  border-radius: 4px;
+  text-align: center;
+  font-size: 60px;
+  border: 1px solid gray;
+}
+
+.anime {
+    animation-name: simple;
+    animation-duration: 5s;
+}
+
+@keyframes simple {
+    from{background-color: orange; color: black}
+    to{background-color: green; color: white}
+    
+} */
+
+
+/* keyframes using percentages */
+
+/* .item {
+  width: 600px;
+  height: 600px;
+  background-color: orange;
+  padding: 10px;
+  border-radius: 4px;
+  text-align: center;
+  font-size: 60px;
+  border: 1px solid gray;
+}
+
+.anime {
+    animation-name: percentage;
+    animation-duration: 5s;
+}
+
+@keyframes percentage {
+    0%{background-color: orange;}
+    25%{background-color: green; color: white;}
+    50%{background-color: gray; color: black;}
+    75%{background-color: pink; color: black;}
+    100%{background-color: red; color: white;}
+}  */
+
+/* move code snippet */
+
+
+.move {
+    width: 400px;
+  height: 400px;
+  color: #000000;
+  background-color: orange;
+  padding: 10px;
+  border-radius: 4px;
+  text-align: center;
+  font-size: 60px;
+  border: 1px solid gray;
+  position: relative; /* 👈 Add this line */
+}
+
+.anime{
+    animation-name: move;
+    animation-duration: 5s;
+    animation-delay: 2s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+@keyframes move {
+    0%{background-color: orange; left: 0px; top: 0px;}
+    25%{background-color: green; left: 200px; top: 0px;}
+    50%{background-color: gray; left: 200px; top: 200px;}
+    75%{background-color: pink; left: 0px; top: 200px;}
+    100%{background-color: red; left: 0px; top: 0px;}
+} 
